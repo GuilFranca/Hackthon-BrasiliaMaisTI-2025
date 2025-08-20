@@ -74,6 +74,7 @@ input {
     background-color: var(--orange);
     color: var(--white);
     padding: 2.5px;
+    cursor: pointer;
 }
 
 .btnVoltar {
@@ -81,16 +82,9 @@ input {
     background-color: var(--white);
     color: var(--orange);
     padding: 2.5px;
+    cursor: pointer;
 }
 
 i {
     color: var(--blue);
-}
-
-.btnProximo_a {
-    color: var(--white);
-}
-
-.btnVoltar_a {
-    color: var(--orange);
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário em Múltiplas Páginas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="multi-page-form">
+        <div class="page active">
+            <h2>Informações Pessoais</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <button type="button" class="next-btn">Próximo</button>
+        </div>
+
+        <div class="page">
+            <h2>Endereço</h2>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
+
+            <button type="button" class="prev-btn">Voltar</button>
+            <button type="button" class="next-btn">Próximo</button>
+        </div>
+
+        <div class="page">
+            <h2>Informações Adicionais</h2>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+
+            <label for="profissao">Profissão:</label>
+            <input type="text" id="profissao">
+
+            <button type="button" class="prev-btn">Voltar</button>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
