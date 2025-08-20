@@ -62,3 +62,11 @@ input {
 i {
     color: var(--blue);
 }
+
+.btnProximo_a {
+    color: var(--white);
+}
+
+.btnVoltar_a {
+    color: var(--orange);
+}
