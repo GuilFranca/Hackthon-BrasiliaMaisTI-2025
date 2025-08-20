@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de sugestões da CAIXA</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/favicon_caixa.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="card__form">
+
+        <img src="../images/logo_caixa.png" alt="" class="card__img__formulario">
+
+        <div class="card__container__titulo">
+            <h1 class="card__titulo__formulario">Identificação</h1>
+            <p class="card__etapa">Etapa 2 de 5</p>
+        </div>
+
+        <form id="formulario__identificacao">
+
+            <label for="proponente">Proponente <i class="ri-question-line"></i></label>
+            <input type="text" id="proponente" name="proponente" required>
+
+            <label for="matricula">Matricula <i class="ri-question-line"></i></label>
+            <input type="text" id="matricula" name="matricula" required>
+
+            <label for="cgc">CGC<i class="ri-question-line"></i></label>
+            <input type="text" id="cgc" name="cgc" required>
+
+            <label for="unidadeGestora">Unidade Gestora <i class="ri-question-line"></i></label>
+            <input type="text" id="unidadeGestora" name="unidadeGestora" required>
+
+
+
+
+            <h1 class="card__titulo__formulario_time">Time do experimento </h1>
+            <br>
+            <br>
+
+            <label for="infoPessoasTime">Informe Nome e Matricula de cada integrante da equipe</label>
+            <input type="text" id="infoPessoasTime" name="infoPessoasTime" required>
+
+            <div class="checkbox_time">
+                <input type="checkbox" id="naoEquipe" name="naoEquipe" value="sim">
+                <label for="naoEquipe">não é equipe</label>
+
+            </div>
+
+
+            <div class="card__container__btn">
+                <button type="submit" class="btnProximo">Próxima página</button>
+                <button class="btnVoltar">Voltar</button>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>

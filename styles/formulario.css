@@ -8,11 +8,30 @@
     flex-direction: column;
     gap: 5px;
 }
-
+.card__container__titulo_time {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .card__titulo__formulario {
     font-size: var(--font-h1);
     color: var(--blue);
     font-weight: 700;
+}
+.card__titulo__formulario_time{
+    font-size: var(--font-h1);
+    color: var(--blue);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.checkbox_time{
+  display: flex; /* Alinha os itens na horizontal */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  gap: 5px; /* Define um espaço pequeno (5 pixels) entre a caixa e o texto */
+    
 }
 
 .card__etapa {
@@ -21,6 +40,11 @@
 }
 
 #formulario__sugestoes {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+#formulario__identificacao {
     display: flex;
     flex-direction: column;
     /* gap: 10px; */
