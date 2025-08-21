@@ -40,6 +40,7 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   font-family: var(--primary-font);
+  text-align: center;
 }
 
 /* Mostra o balão quando o mouse passa por cima do ícone */

@@ -14,7 +14,7 @@
     <form id="multi_page_form">
 
         <!-- Primeiro formulário -->
-        <div class="page active">
+        <div class="page">
             <img src="./images/logo_caixa.png" alt="" class="card__img">
             <h1 class="card__titulo">Sujestões CAIXA</h1>
             <p class="card__paragraph">Aqui é onde você pode brilhar com suas ideias ajudando a instituição a melhorar
@@ -34,13 +34,16 @@
 
             <div class="card__container__inputs">
 
-                <label for="nomeExperimento">Nome do experimento <i class="ri-question-line" data-tooltip="Este é o nome que identificará seu experimento para futuras consultas. Tente ser breve e direto."></i></label>
+                <label for="nomeExperimento">Nome do experimento <i class="ri-question-line"
+                        data-tooltip="Este é o nome que identificará seu experimento para futuras consultas. Tente ser breve e direto."></i></label>
                 <input type="text" id="nomeExperimento" name="nomeExperimento" required>
 
-                <label for="desafioResolve">Desafio que a ideia resolve <i class="ri-question-line" data-tooltip="Descreva em uma frase qual problema ou desafio a sua ideia se propõe a resolver."></i></label>
+                <label for="desafioResolve">Desafio que a ideia resolve <i class="ri-question-line"
+                        data-tooltip="Descreva em uma frase qual problema ou desafio a sua ideia se propõe a resolver."></i></label>
                 <input type="text" id="desafioResolve" name="desafioResolve" required>
 
-                <label for="descricaoExperimento">Descrição do experimento <i class="ri-question-line" data-tooltip="Detalhe aqui como o experimento funcionará na prática, quais são os passos e o que se espera como resultado."></i></label>
+                <label for="descricaoExperimento">Descrição do experimento <i class="ri-question-line"
+                        data-tooltip="Detalhe aqui como o experimento funcionará na prática, quais são os passos e o que se espera como resultado."></i></label>
                 <input type="text" id="descricaoExperimento" name="descricaoExperimento" required>
 
             </div>
@@ -64,16 +67,20 @@
 
             <div class="card__container__inputs">
 
-                <label for="proponente">Proponente <i class="ri-question-line" data-tooltip='Insira o seu nome completo, sem abreviações.'></i></label>
+                <label for="proponente">Proponente <i class="ri-question-line"
+                        data-tooltip='Insira o seu nome completo, sem abreviações.'></i></label>
                 <input type="text" id="proponente" name="proponente" required>
 
-                <label for="matricula">Matricula <i class="ri-question-line" data-tooltip="Insira a sua matrícula funcional da CAIXA, que é o seu código de empregado."></i></label>
+                <label for="matricula">Matricula <i class="ri-question-line"
+                        data-tooltip="Insira a sua matrícula funcional da CAIXA, que é o seu código de empregado."></i></label>
                 <input type="text" id="matricula" name="matricula" required>
 
-                <label for="cgc">CGC<i class="ri-question-line" data-tooltip='Insira o código numérico da sua unidade de lotação na CAIXA, que é o "Código da Unidade CAIXA de vinculação do Empregado". Toda agência, superintendência ou área da matriz possui um código único. '></i></label>
+                <label for="cgc">CGC<i class="ri-question-line"
+                        data-tooltip='Insira o código numérico da sua unidade de lotação na CAIXA, que é o "Código da Unidade CAIXA de vinculação do Empregado". Toda agência, superintendência ou área da matriz possui um código único. '></i></label>
                 <input type="text" id="cgc" name="cgc" required>
 
-                <label for="unidadeGestora">Unidade Gestora <i class="ri-question-line" data-tooltip="Insira o nome da unidade da Matriz da CAIXA à qual sua unidade está vinculada. Geralmente, é a superintendência, gerência nacional ou diretoria responsável pela sua área de atuação."></i></label>
+                <label for="unidadeGestora">Unidade Gestora <i class="ri-question-line"
+                        data-tooltip="Insira o nome da unidade da Matriz da CAIXA à qual sua unidade está vinculada. Geralmente, é a superintendência, gerência nacional ou diretoria responsável pela sua área de atuação."></i></label>
                 <input type="text" id="unidadeGestora" name="unidadeGestora" required>
 
             </div>
@@ -81,13 +88,59 @@
             <h1 class="card__titulo">Time do experimento </h1>
 
             <div class="card__container__inputs">
-                <label for="infoPessoasTime">Nomes e Matriculas <i class="ri-question-line" data-tooltip=" Liste os nomes completos e as matrículas de todos os outros colaboradores que fazem parte da sua equipe neste projeto."></i></label>
+                <label for="infoPessoasTime">Nomes e Matriculas <i class="ri-question-line"
+                        data-tooltip=" Liste os nomes completos e as matrículas de todos os outros colaboradores que fazem parte da sua equipe neste projeto."></i></label>
                 <input type="text" id="infoPessoasTime" name="infoPessoasTime" required>
 
                 <div class="checkbox__time__container">
                     <input type="checkbox" id="naoEquipe" name="naoEquipe" value="sim" class="input__checkbox">
                     <label for="naoEquipe">não é equipe</label>
                 </div>
+            </div>
+
+            <div class="card__container__btn">
+                <button type="button" class="next__btn">Próxima página</button>
+                <button type="button" class="prev__btn">Voltar</button>
+            </div>
+
+        </div>
+
+        <!-- Quarto formulário -->
+        <div class="page active">
+
+            <img src="../images/logo_caixa.png" alt="" class="card__img__formulario">
+
+            <div class="card__container__titulo">
+                <h1 class="card__titulo__formulario">Planejamento</h1>
+                <p class="card__etapa">Etapa 3 de 5</p>
+            </div>
+
+            <div class="card__container__inputs">
+
+                <label for="hipótese">Hipótese <i class="ri-question-line" data-tooltip=' Formule sua crença principal de forma clara e testável, seguindo o formato "Se fizermos [AÇÃO], então [RESULTADO] acontecerá". Exemplo: "Se criarmos uma página de "Perguntas Frequentes" no site, o número de ligações no call center sobre dúvidas simples irá diminuir".'></i></label>
+                <input type="text" id="Hipótese" name="hipótese" required>
+
+                <label for="testesHipotese">Testes para Hipótese <i class="ri-question-line" data-tooltip='Explique como você irá validar sua hipótese, detalhando os testes e os critérios de sucesso. Exemplo: "Vamos monitorar o volume de ligações diárias por um mês antes e um mês depois do lançamento da página, e o sucesso será uma redução de 15% nas chamadas sobre os temas do FAQ".'></i></label>
+                <input type="text" id="testesHipotese" name="testesHipotese" required>
+
+                <label for="horixonteInovacao">Horizonte de Inovação<i class="ri-question-line" data-tooltip=' Classifique sua ideia de acordo com o impacto no negócio: H1 (melhora incremental em algo que já existe), H2 (criação de algo radicalmente novo para a CAIXA) ou H3 (criação de algo disruptivo para todo o mercado). Exemplo: "H1 - Incremental".'></i></label>
+                <input type="text" id="horixonteInovacao" name="horizonteInovacao" required>
+
+                <label for="baseline">Baseline <i class="ri-question-line" data-tooltip=' Informe os dados e números atuais que servirão como ponto de partida para medir o sucesso do seu experimento. Exemplo: "Atualmente, nosso call center recebe em média 500 ligações por dia sobre como desbloquear o aplicativo".'></i></label>
+                <input type="text" id="baseline" name="baseline" required>
+
+                <label for="resultadosEsperados">Resultados Esperados <i class="ri-question-line" data-tooltip='Descreva as metas e os objetivos mensuráveis que você espera alcançar. Use números sempre que possível. Exemplo: "Esperamos reduzir em 100 o número de ligações diárias sobre desbloqueio do aplicativo".'></i></label>
+                <input type="text" id="resultadosEsperados" name="resultadosEsperados" required>
+
+                <label for="metricasKPIs">Métricas e KPIs <i class="ri-question-line" data-tooltip=' Liste os indicadores de sucesso que você irá monitorar para acompanhar o desempenho do experimento. Exemplo: "Número de ligações diárias (por tema), Acessos à página de Perguntas Frequentes, Tempo Médio de Atendimento (TMA)".'></i></label>
+                <input type="text" id="metricasKPIs" name="metricasKPIs" required>
+
+                <label for="diretrizesEstrategicas">Diretrizes Estratégicas <i class="ri-question-line" data-tooltip='Selecione os pilares estratégicos da CAIXA com os quais sua proposta se alinha e justifique a conexão. Exemplo: Marcar a opção "Cliente no centro" e justificar com: "A solução oferece autonomia para o cliente resolver dúvidas simples de forma rápida, melhorando sua experiência".'></i></label>
+                <input type="text" id="diretrizesEstrategicas" name="diretrizesEstrategicas" required>
+
+                <label for="flexibilizacaoNormas">Flexibilização de Normas <i class="ri-question-line" data-tooltip=' Indique se o seu experimento precisa que alguma norma ou procedimento interno da CAIXA seja temporariamente ajustado para que ele possa ser realizado, informando o nome da norma e o gestor responsável por ela. Se não for necessário, escreva "não identificado".Exemplo: "Para testar uma nova ferramenta de análise de dados em nuvem, precisamos de uma flexibilização temporária da norma de segurança TI-045, que restringe o uso de softwares não homologados. O gestor responsável pela norma é a Gerência de Segurança da Informação".'></i></label>
+                <input type="text" id="flexibilizacaoNormas" name="flexibilizacaoNormas" required>
+
             </div>
 
             <div class="card__container__btn">
