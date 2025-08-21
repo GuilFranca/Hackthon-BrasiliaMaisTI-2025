@@ -1,3 +1,80 @@
+form {
+    background-color: var(--white);
+    width: 85%;
+    padding: 30px 10px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+.page.active {
+    display: flex;
+}
+
+.next__btn {
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 2.5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: var(--font-btn);
+    border: 1px solid var(--orange);
+    transition: ease 0.4s;
+}
+
+.next__btn:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.prev__btn {
+    border: 1px solid var(--orange);
+    background-color: var(--white);
+    color: var(--orange);
+    padding: 2.5px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+
+.prev__btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* Primeiro form */
+
+.card__img {
+    width: 200px;
+}
+
+.card__titulo {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.card__paragraph {
+    color: var(--gray);
+    /* margin: 15px; */
+    text-align: center;
+    width: 300px;
+}
+
+/* Segundo form */
+
 .card__img__formulario {
     width: 105px;
 }
@@ -8,30 +85,18 @@
     flex-direction: column;
     gap: 5px;
 }
+
 .card__container__titulo_time {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
 .card__titulo__formulario {
     font-size: var(--font-h1);
     color: var(--blue);
     font-weight: 700;
-}
-.card__titulo__formulario_time{
-    font-size: var(--font-h1);
-    color: var(--blue);
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.checkbox_time{
-  display: flex; /* Alinha os itens na horizontal */
-  align-items: center; /* Alinha os itens verticalmente no centro */
-  gap: 5px; /* Define um espaço pequeno (5 pixels) entre a caixa e o texto */
-    
 }
 
 .card__etapa {
@@ -39,19 +104,17 @@
     font-size: var(--font-etapa);
 }
 
-#formulario__sugestoes {
+.card__container__inputs {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
-}
-#formulario__identificacao {
-    display: flex;
-    flex-direction: column;
-    /* gap: 10px; */
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
 label {
     font-size: var(--font-p);
+    color: var(--gray);
 }
 
 input {
@@ -63,26 +126,12 @@ input {
 }
 
 .card__container__btn {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.btnProximo {
-    border: none;
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 2.5px;
-    cursor: pointer;
-}
-
-.btnVoltar {
-    border: 1px solid var(--orange);
-    background-color: var(--white);
-    color: var(--orange);
-    padding: 2.5px;
-    cursor: pointer;
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
 i {
