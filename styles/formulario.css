@@ -9,6 +9,7 @@ form {
     align-items: center;
     gap: 25px;
     border-radius: 15px;
+    /* border: 1px solid red; */
 }
 
 .page {
@@ -136,4 +137,28 @@ input {
 
 i {
     color: var(--blue);
+}
+
+/* Terceiro Formulário */
+/* Adicione ou modifique esta regra no seu arquivo style.css */
+.checkbox__time__container {
+    display: flex;
+    align-items: center; /* Alinha o checkbox e o texto verticalmente */
+    gap: 8px; /* Adiciona um pequeno espaçamento entre o checkbox e o label */
+    /*margin-bottom: 15px;  Adiciona espaçamento abaixo do container se necessário */
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+/* Garanta que o input do checkbox não receba as mesmas regras dos outros inputs */
+.input__checkbox {
+    width: auto; /* Anula o 'width: 100%' que provavelmente está vindo de uma regra mais genérica */
+    margin-bottom: 0; /* Remove a margem extra do input */
+}
+
+/* Se você tem uma regra genérica como 'input { width: 100% }' */
+/* É uma boa prática redefinir o estilo para o tipo 'checkbox' */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px; /* Adiciona espaço à direita do checkbox */
 }
