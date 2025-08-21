@@ -117,34 +117,135 @@
 
             <div class="card__container__inputs">
 
-                <label for="hipótese">Hipótese <i class="ri-question-line" data-tooltip=' Formule sua crença principal de forma clara e testável, seguindo o formato "Se fizermos [AÇÃO], então [RESULTADO] acontecerá". Exemplo: "Se criarmos uma página de "Perguntas Frequentes" no site, o número de ligações no call center sobre dúvidas simples irá diminuir".'></i></label>
+                <label for="hipótese">Hipótese <i class="ri-question-line"
+                        data-tooltip=' Formule sua crença principal de forma clara e testável, seguindo o formato "Se fizermos [AÇÃO], então [RESULTADO] acontecerá". Exemplo: "Se criarmos uma página de "Perguntas Frequentes" no site, o número de ligações no call center sobre dúvidas simples irá diminuir".'></i></label>
                 <input type="text" id="Hipótese" name="hipótese" required>
 
-                <label for="testesHipotese">Testes para Hipótese <i class="ri-question-line" data-tooltip='Explique como você irá validar sua hipótese, detalhando os testes e os critérios de sucesso. Exemplo: "Vamos monitorar o volume de ligações diárias por um mês antes e um mês depois do lançamento da página, e o sucesso será uma redução de 15% nas chamadas sobre os temas do FAQ".'></i></label>
+                <label for="testesHipotese">Testes para Hipótese <i class="ri-question-line"
+                        data-tooltip='Explique como você irá validar sua hipótese, detalhando os testes e os critérios de sucesso. Exemplo: "Vamos monitorar o volume de ligações diárias por um mês antes e um mês depois do lançamento da página, e o sucesso será uma redução de 15% nas chamadas sobre os temas do FAQ".'></i></label>
                 <input type="text" id="testesHipotese" name="testesHipotese" required>
 
-                <label for="horixonteInovacao">Horizonte de Inovação<i class="ri-question-line" data-tooltip=' Classifique sua ideia de acordo com o impacto no negócio: H1 (melhora incremental em algo que já existe), H2 (criação de algo radicalmente novo para a CAIXA) ou H3 (criação de algo disruptivo para todo o mercado). Exemplo: "H1 - Incremental".'></i></label>
+                <label for="horixonteInovacao">Horizonte de Inovação<i class="ri-question-line"
+                        data-tooltip=' Classifique sua ideia de acordo com o impacto no negócio: H1 (melhora incremental em algo que já existe), H2 (criação de algo radicalmente novo para a CAIXA) ou H3 (criação de algo disruptivo para todo o mercado). Exemplo: "H1 - Incremental".'></i></label>
                 <input type="text" id="horixonteInovacao" name="horizonteInovacao" required>
 
-                <label for="baseline">Baseline <i class="ri-question-line" data-tooltip=' Informe os dados e números atuais que servirão como ponto de partida para medir o sucesso do seu experimento. Exemplo: "Atualmente, nosso call center recebe em média 500 ligações por dia sobre como desbloquear o aplicativo".'></i></label>
+                <label for="baseline">Baseline <i class="ri-question-line"
+                        data-tooltip=' Informe os dados e números atuais que servirão como ponto de partida para medir o sucesso do seu experimento. Exemplo: "Atualmente, nosso call center recebe em média 500 ligações por dia sobre como desbloquear o aplicativo".'></i></label>
                 <input type="text" id="baseline" name="baseline" required>
 
-                <label for="resultadosEsperados">Resultados Esperados <i class="ri-question-line" data-tooltip='Descreva as metas e os objetivos mensuráveis que você espera alcançar. Use números sempre que possível. Exemplo: "Esperamos reduzir em 100 o número de ligações diárias sobre desbloqueio do aplicativo".'></i></label>
+                <label for="resultadosEsperados">Resultados Esperados <i class="ri-question-line"
+                        data-tooltip='Descreva as metas e os objetivos mensuráveis que você espera alcançar. Use números sempre que possível. Exemplo: "Esperamos reduzir em 100 o número de ligações diárias sobre desbloqueio do aplicativo".'></i></label>
                 <input type="text" id="resultadosEsperados" name="resultadosEsperados" required>
 
-                <label for="metricasKPIs">Métricas e KPIs <i class="ri-question-line" data-tooltip=' Liste os indicadores de sucesso que você irá monitorar para acompanhar o desempenho do experimento. Exemplo: "Número de ligações diárias (por tema), Acessos à página de Perguntas Frequentes, Tempo Médio de Atendimento (TMA)".'></i></label>
+                <label for="metricasKPIs">Métricas e KPIs <i class="ri-question-line"
+                        data-tooltip=' Liste os indicadores de sucesso que você irá monitorar para acompanhar o desempenho do experimento. Exemplo: "Número de ligações diárias (por tema), Acessos à página de Perguntas Frequentes, Tempo Médio de Atendimento (TMA)".'></i></label>
                 <input type="text" id="metricasKPIs" name="metricasKPIs" required>
 
-                <label for="diretrizesEstrategicas">Diretrizes Estratégicas <i class="ri-question-line" data-tooltip='Selecione os pilares estratégicos da CAIXA com os quais sua proposta se alinha e justifique a conexão. Exemplo: Marcar a opção "Cliente no centro" e justificar com: "A solução oferece autonomia para o cliente resolver dúvidas simples de forma rápida, melhorando sua experiência".'></i></label>
+                <label for="diretrizesEstrategicas">Diretrizes Estratégicas <i class="ri-question-line"
+                        data-tooltip='Selecione os pilares estratégicos da CAIXA com os quais sua proposta se alinha e justifique a conexão. Exemplo: Marcar a opção "Cliente no centro" e justificar com: "A solução oferece autonomia para o cliente resolver dúvidas simples de forma rápida, melhorando sua experiência".'></i></label>
                 <input type="text" id="diretrizesEstrategicas" name="diretrizesEstrategicas" required>
 
-                <label for="flexibilizacaoNormas">Flexibilização de Normas <i class="ri-question-line" data-tooltip=' Indique se o seu experimento precisa que alguma norma ou procedimento interno da CAIXA seja temporariamente ajustado para que ele possa ser realizado, informando o nome da norma e o gestor responsável por ela. Se não for necessário, escreva "não identificado".Exemplo: "Para testar uma nova ferramenta de análise de dados em nuvem, precisamos de uma flexibilização temporária da norma de segurança TI-045, que restringe o uso de softwares não homologados. O gestor responsável pela norma é a Gerência de Segurança da Informação".'></i></label>
+                <label for="flexibilizacaoNormas">Flexibilização de Normas <i class="ri-question-line"
+                        data-tooltip=' Indique se o seu experimento precisa que alguma norma ou procedimento interno da CAIXA seja temporariamente ajustado para que ele possa ser realizado, informando o nome da norma e o gestor responsável por ela. Se não for necessário, escreva "não identificado".Exemplo: "Para testar uma nova ferramenta de análise de dados em nuvem, precisamos de uma flexibilização temporária da norma de segurança TI-045, que restringe o uso de softwares não homologados. O gestor responsável pela norma é a Gerência de Segurança da Informação".'></i></label>
                 <input type="text" id="flexibilizacaoNormas" name="flexibilizacaoNormas" required>
 
             </div>
 
             <div class="card__container__btn">
                 <button type="button" class="next__btn">Próxima página</button>
+                <button type="button" class="prev__btn">Voltar</button>
+            </div>
+
+        </div>
+
+        <!-- Quinto Formulário -->
+        <div class="page">
+
+            <img src="../images/logo_caixa.png" alt="" class="card__img__formulario">
+
+            <div class="card__container__titulo">
+                <h1 class="card__titulo__formulario">Impacto e Recursos</h1>
+                <p class="card__etapa">Etapa 4 de 5</p>
+            </div>
+
+            <div class="card__container__inputs">
+
+                <label for="volume">Volume <i class="ri-question-line"
+                        data-tooltip=' Faça uma estimativa do número de pessoas que serão diretamente beneficiadas ou impactadas pela sua solução. Exemplo: "Nosso time de 20 pessoas (empregados) e os 5.000 clientes que utilizam o aplicativo "Cartões" (clientes)."'></i></label>
+                <input type="text" id="volume" name="volume" required>
+
+                <label for="stakeholdersExternos">Stakeholders Externos <i class="ri-question-line"
+                        data-tooltip='E a área de TI (equipe de desenvolvimento do App)."Liste quais outras áreas, unidades ou diretorias da CAIXA serão afetadas ou precisarão se envolver no seu experimento. Exemplo: "A Gerência de Atendimento ao Cliente.'></i></label>
+                <input type="text" id="stakeholdersExternos" name="stakeholdersExternos" required>
+
+                <label for="estimativaEsforco">Estimativa de Esforço <i class="ri-question-line"
+                        data-tooltip='Identifique os parceiros, fornecedores, clientes ou outras entidades externas à CAIXA que são relevantes para o sucesso do projeto. Exemplo: "A empresa "Soluções Digitais LTDA", que é a fornecedora da nossa plataforma de atendimento".'></i></label>
+                <input type="text" id="estimativaEsforco" name="estimativaEsforco" required>
+
+                <label for="estimativaGanhos">Estimativa de Ganhos <i class="ri-question-line"
+                        data-tooltip='Se aplicável, estime o potencial de ganho financeiro (aumento de receita ou redução de custos) em Reais (R$). Exemplo: "Estimamos uma redução de custos de R$50.000 por ano com a diminuição de chamadas no call center".'></i></label>
+                <input type="text" id="estimativaGanhos" name="estimativaGanhos" required>
+
+                <label for="riscosPlanos">Riscos e Plano de Mitigação <i class="ri-question-line"
+                        data-tooltip=' Identifique os principais riscos do projeto e proponha um plano para evitar ou reduzir o impacto de cada um. Exemplo: "Risco: Baixa adesão dos funcionários à nova ferramenta. Plano de Mitigação: Realizar um workshop de treinamento e criar um guia rápido de uso".'></i></label>
+                <input type="text" id="riscosPlanos" name="riscosPlanos" required>
+
+                <label for="cronogramaMacro">Cronograma Macro <i class="ri-question-line"
+                        data-tooltip='Descreva as principais etapas do seu projeto com uma estimativa de datas para cada uma. Exemplo: "Semana 1: Mapeamento do processo. Semanas 2-3: Desenvolvimento da solução. Semana 4: Teste piloto com a equipe".'></i></label>
+                <input type="text" id="cronogramaMacro" name="cronogramaMacro" required>
+
+                <label for="dependenciasProjeto">Dependências do Projeto <i class="ri-question-line"
+                        data-tooltip=' Liste outros projetos, equipes, tecnologias ou aprovações que precisam estar concluídos ou disponíveis para que o seu experimento possa acontecer. Isso ajuda a entender a viabilidade e o momento certo para começar. Exemplo: "Este projeto depende da finalização da "Atualização do API de Clientes", prevista para o próximo trimestre, pois precisaremos dos novos dados que ele irá fornecer." '></i></label>
+                <input type="text" id="dependenciasProjeto" name="dependenciasProjeto" required>
+
+                <label for="implicacoesLegais">Implicações Legais <i class="ri-question-line"
+                        data-tooltip=' Indique se seu experimento envolve o tratamento de dados de clientes (LGPD), transações financeiras (BACEN) ou qualquer outra área com implicações legais. Se não houver, escreva "não identificado". Exemplo: "Sim, o projeto irá analisar dados de transações de clientes, portanto, precisará de validação do departamento de Compliance para garantir o alinhamento com a LGPD e o sigilo bancário."'></i></label>
+                <input type="text" id="implicacoesLegais" name="implicacoesLegais" required>
+
+                <label for="detalhesExtras">Detalhes extras<i class="ri-question-line"
+                        data-tooltip='Use este campo para qualquer outra informação relevante que não se encaixou nos campos anteriores. Exemplo: "A medição dos resultados será feita utilizando os dashboards já existentes no Power BI."'></i></label>
+                <input type="text" id="detalhesExtras" name="detalhesExtras" required>
+
+            </div>
+
+            <div class="card__container__btn">
+                <button type="button" class="next__btn">Próxima página</button>
+                <button type="button" class="prev__btn">Voltar</button>
+            </div>
+
+        </div>
+
+        <!-- Sexta formulário -->
+        <div class="page">
+
+            <img src="../images/logo_caixa.png" alt="" class="card__img__formulario">
+
+            <div class="card__container__titulo">
+                <h1 class="card__titulo__formulario">Governança e Finalização</h1>
+                <p class="card__etapa"></p>
+            </div>
+
+            <div class="card__container__inputs">
+
+                <div class="checkbox__time__container">
+                    <input type="checkbox" id="naoEquipe" name="naoEquipe" value="sim" class="input__checkbox">
+                    <label for="naoEquipe">Confirmo que os recursos serão providos pela minha unidade gestora.</label>
+                </div>
+
+                <div class="checkbox__time__container">
+                    <input type="checkbox" id="naoEquipe" name="naoEquipe" value="sim" class="input__checkbox">
+                    <label for="naoEquipe">Comprometo-me a notificar a GEINA ao atingir 80% do orçamento.</label>
+                </div>
+
+                <div class="checkbox__time__container">
+                    <input type="checkbox" id="naoEquipe" name="naoEquipe" value="sim" class="input__checkbox">
+                    <label for="naoEquipe">Comprometo-me a enviar relatórios periódicos de evolução.</label>
+                </div>
+
+            </div>
+
+            <div class="card__container__btn">
+                <button type="submit" class="next__btn">Enviar formulário</button>
                 <button type="button" class="prev__btn">Voltar</button>
             </div>
 
