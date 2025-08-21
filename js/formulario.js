@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (allValid) {
                 currentPageIndex++;
                 showPage(currentPageIndex);
+                atualizandoEtapa();
             }
+
         });
     });
 
@@ -40,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             currentPageIndex--;
             showPage(currentPageIndex);
+            atualizandoEtapa();
         });
     });
 
@@ -57,7 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Código para enviar para o servidor aqui (não alterado)
     });
 
-    let cardEtapa = document.querySelector('.card__etapa');
-    cardEtapa.textContent = `Etapa ${currentPageIndex + 1} de 5`;
+    function atualizandoEtapa() {
+        let cardEtapas = document.querySelectorAll('.card__etapa');
+        cardEtapas.forEach( cardEtapa => {
+            cardEtapa.textContent = `Etapa ${currentPageIndex} de 5`;
+        });
+    }
 
 });
