@@ -1,0 +1,49 @@
+/* Posicionamento relativo no ícone para que o balão (tooltip) saiba onde aparecer */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+/* Estilo do balão (tooltip) - escondido por padrão */
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+
+  /* Aparência do balão */
+  position: absolute;
+  bottom: 125%;
+  
+  /* Posição no centro do elemento pai */
+  left: 300%;
+  transform: translateX(-50%);
+
+  /* CORREÇÃO: Adicionando margem e reajustando a largura para evitar vazamento */
+  max-width: 250px;
+  width: max-content; /* Largura se adapta ao conteúdo */
+  min-width: 150px;
+  
+  /* Adicione um espaçamento interno para as bordas do balão */
+  padding: 8px 12px;
+  
+  /* Ajuste a largura do balão para não ultrapassar a tela */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  
+  /* Estilos visuais */
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  z-index: 10;
+  
+  /* Efeito de transição suave */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  font-family: var(--primary-font);
+}
+
+/* Mostra o balão quando o mouse passa por cima do ícone */
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}

@@ -13,6 +13,9 @@
 /* Importando o estilo do formulário */
 @import url('./styles/formulario.css');
 
+/* Importando o estilo do question */
+@import url('./styles/questions.css');
+
 body {
     background: linear-gradient(125deg, #003C6F, #2591ED);
     min-height: 100vh;
