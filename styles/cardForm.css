@@ -1,9 +1,0 @@
-.card__btn {
-    /* margin-bottom: 2px; */
-    background-color: var(--orange);
-    color: var(--white);
-    border: none;
-    padding: 5px 10px;
-    font-size: var(--font-h1);
-    font-weight: 600;
-}
